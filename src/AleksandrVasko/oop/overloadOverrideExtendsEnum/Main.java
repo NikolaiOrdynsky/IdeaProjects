@@ -1,4 +1,4 @@
-package AleksandrVasko.oop;
+package AleksandrVasko.oop.overloadOverrideExtendsEnum;
 
 public class Main {
     public static void main(String[] args) {

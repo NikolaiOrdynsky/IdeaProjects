@@ -1,4 +1,4 @@
-package AleksandrVasko.oop;
+package AleksandrVasko.oop.overloadOverrideExtendsEnum;
 
 public abstract class auto {
 

@@ -1,8 +1,9 @@
-package AleksandrVasko.task3;
+package AleksandrVasko.oop.homeTask.task3;
 
 import java.util.Scanner;
 
-public class PalindromeFinderSolutionAlternative {
+public class PalindromeFinderSolution {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 //       Объявляем переменную типа boolean которая будет указывать нужно ли продолжать выполнение цикла
@@ -17,20 +18,19 @@ public class PalindromeFinderSolutionAlternative {
             if (convertedInput.length() != 5) {
                 System.out.println("Error: input number is not 5 digits long");
             } else {
+//            Если длинна строки равна пяти, продолжается выполнение программы и выходим из цикла.
                 continueLoop = false;
-                int reversedInt = 0;
-                int tmp = originalInt;
-                while (tmp > 0) {
-//            Делим оригинальное значение на 10 и остаток от деления сохраняем в переменную rest.
-                    int rest = tmp % 10;
-//            Домножаем  reversedInt полученый в предыдущей итерации на 10 и добавояем остаток
-//            от деления полученый в текущем круге.
-                    reversedInt = reversedInt * 10 + rest;
-//            Делим tmp на 10 для того чтобы перейти на следущую итерацию избавившись от младшего разряда.
-                    tmp = tmp / 10;
+                String reversedString = "";
+//            Проходим по нашей строке в обратном порядке используя метод .charAt(i) и получая доступ к последнему
+//            символу, потом предпоследнему, и т.д.
+                for (int i = convertedInput.length() - 1; i >= 0; i--) {
+//                  Alternatively StringBuilder can be used here.
+                    reversedString = reversedString + convertedInput.charAt(i);
                 }
+//            Превращаем строку обратно в чило типа Integer.
+                int reversedInt = Integer.parseInt(reversedString);
 //            Сравниваем оригинальное число с результатом.
-                if (originalInt == reversedInt) {
+                if(originalInt==reversedInt){
                     System.out.println(originalInt + " is palindrome");
                 } else {
                     System.out.println(originalInt + " is not palindrome");

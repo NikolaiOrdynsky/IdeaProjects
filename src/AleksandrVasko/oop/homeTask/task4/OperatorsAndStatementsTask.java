@@ -1,4 +1,4 @@
-package AleksandrVasko.task4;
+package AleksandrVasko.oop.homeTask.task4;
 
 /**
  * Данный класс предназначен для проверки знаний студентов по темам раздела

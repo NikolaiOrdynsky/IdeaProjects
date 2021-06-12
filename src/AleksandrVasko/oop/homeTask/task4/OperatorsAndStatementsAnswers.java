@@ -1,4 +1,4 @@
-package AleksandrVasko.task4;
+package AleksandrVasko.oop.homeTask.task4;
 
 public class OperatorsAndStatementsAnswers {
     private static int strange = 0;

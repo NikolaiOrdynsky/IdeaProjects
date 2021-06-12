@@ -1,4 +1,4 @@
-package AleksandrVasko.task2;
+package AleksandrVasko.oop.homeTask.task2;
 
 import java.util.Scanner;
 

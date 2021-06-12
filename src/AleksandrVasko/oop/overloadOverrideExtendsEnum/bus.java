@@ -1,4 +1,4 @@
-package AleksandrVasko.oop;
+package AleksandrVasko.oop.overloadOverrideExtendsEnum;
 
 public class bus extends car {
     private final int sizePassanger;
