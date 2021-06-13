@@ -1,4 +1,4 @@
-package creditCalculator;
+package AleksandrVasko.creditCalculator;
 
 
 public class calculator {
