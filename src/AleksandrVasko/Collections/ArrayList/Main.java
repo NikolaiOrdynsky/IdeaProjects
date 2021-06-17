@@ -1,6 +1,6 @@
-package AleksandrVasko.Collections;
+package AleksandrVasko.Collections.ArrayList;
 
-import AleksandrVasko.Collections.ArrayList.ArrayLists;
+
 
 
 import java.util.Scanner;
@@ -25,14 +25,15 @@ public class Main {
         instruction();
         int input = console.nextInt();
 
-        while (!(input ==0)) {
+        while (!(input == 0)) {
             switch (input) {
                 case 1 -> {
                     System.out.println("1.Добавить задачу в конец коллекции.");
                     System.out.println("Введите тело задачи.");
                     console.nextLine();
                     String task1 = console.nextLine();
-                    list.addInList(task1);
+                    // list.addInList(task1);
+                    list.addSortAlfavit(task1);
                     System.out.println("Операция выполнена.");
                     System.out.println("Введите следущую команду :");
                     input = console.nextInt();
