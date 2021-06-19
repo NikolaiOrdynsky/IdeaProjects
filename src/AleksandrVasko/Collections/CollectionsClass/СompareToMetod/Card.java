@@ -1,4 +1,4 @@
-package AleksandrVasko.Collections.CollectionsClass;
+package AleksandrVasko.Collections.CollectionsClass.СompareToMetod;
 
 import java.util.Arrays;
 import java.util.List;
