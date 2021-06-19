@@ -12,7 +12,6 @@ public class sortArrayList {
             if (!array1.contains(s))                        // проверяется есть ли элемент s в списке, тоесть нет ли повторяющихся элементов
                 array1.add(s);                              // добавить элемент s в список
         }
-
         String[] buf = array1.toArray(new String[array1.size()]); //Создать массив с элементами которые копируются из списка array1 , в параметрах метода указывается тип и размер массива
         for (int j = 0; j < buf.length; j++) {                    //два цикла для сравнения одного  элемента со вторым
             for (int i = j + 1; i < buf.length; i++) {            //[1 цикл] [2 цикл]
@@ -20,10 +19,9 @@ public class sortArrayList {
                     buf[i] = "clear";                             //первый из них примет значение "clear"
                 }
             }
-
             array1.remove("clear");
         }
-        Collections.sort(array1); // сортировка списка с помощью класса Collections и его метода sort.
+        Collections.sort(array1);                                // сортировка списка с помощью класса Collections и его метода sort.
         System.out.println(array1);
     }
 

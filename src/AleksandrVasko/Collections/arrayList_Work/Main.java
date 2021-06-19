@@ -8,5 +8,6 @@ public class Main {
         int i = 1;
         String s = new String[]{"as", "as", "tg"}[i];
         System.out.println();
+        int x=Integer.parseInt("185");
     }
 }
