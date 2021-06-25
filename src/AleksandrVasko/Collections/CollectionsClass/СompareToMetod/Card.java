@@ -2,7 +2,6 @@ package AleksandrVasko.Collections.CollectionsClass.СompareToMetod;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 public class Card implements Comparable<Card> {

@@ -23,7 +23,7 @@ public class Points {
     }
 
     public static void street(ArrayList<Gamers> arrayGamers) {
-        List<String> mastArrayList = Arrays.asList(Cards.name);
+        List<String> mastArrayList = new ArrayList<>(Arrays.asList(Cards.name));
         List<Integer> indexArray = new ArrayList<>();
         for (Gamers s : arrayGamers) {
             for (Cards a : s.hand) {
