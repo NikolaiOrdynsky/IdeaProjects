@@ -1,4 +1,4 @@
-package AleksandrVasko.Collections.CollectionsClass.СomparatorCompareTo;
+package AleksandrVasko.Collections.СomparatorCompareTo;
 
 import java.util.ArrayList;
 import java.util.Arrays;

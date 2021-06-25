@@ -1,4 +1,4 @@
-package AleksandrVasko.Collections.CollectionsClass.СomparatorCompareTo;
+package AleksandrVasko.Collections.СomparatorCompareTo;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -22,7 +22,7 @@ import java.util.List;
  в качестве методов упорядочения в сериализуемых структурах данных (таких как набор деревьев, карта деревьев).
  Для успешной сериализации структуры данных компаратор (если он предусмотрен) должен реализовать сериализуемую.
 */
-public class ComparatorCard implements Comparator<Card> {
+public class ComparatorNameCard implements Comparator<Card> {
     List<Name> listName = Arrays.asList(Name.values());
 
     @Override
@@ -32,6 +32,8 @@ public class ComparatorCard implements Comparator<Card> {
         } else if (listName.indexOf(card1.getName()) > listName.indexOf(card2.getName())) {
             return +1;
         }
-           return card1.getMast().compareTo(card2.getMast());
+
+
+        return 0;
     }
 }

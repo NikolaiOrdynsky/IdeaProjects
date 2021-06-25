@@ -1,4 +1,4 @@
-package AleksandrVasko.Collections.CollectionsClass.СomparatorCompareTo;
+package AleksandrVasko.Collections.СomparatorCompareTo;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,11 +30,11 @@ public class Main {
 
         Collections.shuffle(al); // перемешать элементы в ArrayList.
 
+
+
+        al.sort(new ComparatorMastCard().thenComparing(new ComparatorNameCard())); // Метод sort класса ArrayList сортирует элементы с помощью наших компараторов,
+                                                                                   // приоритет сортировки можно регулировать меняя местами компараторы.
         Card.printCard(al);  // Выводим на экран элементы из ArrayList
-
-        al.sort(new ComparatorCard()); // Метод sort класса ArrayList сортирует элементы с помощью нашего компаратора.
-
-
     }
 
 }
