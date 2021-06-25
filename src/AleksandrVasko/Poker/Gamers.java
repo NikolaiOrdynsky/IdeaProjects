@@ -5,11 +5,12 @@ import java.util.Collections;
 
 
 public class Gamers {
-    public static int numberGamers;
-    public int points;
-    public String name;
-    ArrayList<Coloda> hand = new ArrayList<>();
-   public Gamers(Coloda[] cards) {
+    protected static int numberGamers;
+    protected int points;
+    protected String name;
+    protected ArrayList<Cards> hand = new ArrayList<>();
+    /*конструктор принимает массив типа Cards и передает в список hand (рука)*/
+   public Gamers(Cards[] cards) {
         numberGamers++;
         Collections.addAll(hand, cards);
         System.out.println("Gamers " + numberGamers);
@@ -20,7 +21,7 @@ public class Gamers {
 
     public String print() {
         String value = "";
-        for (Coloda s : hand) {
+        for (Cards s : hand) {
 
             value = value + s.getMasti() + s.getFace() + " ";
         }

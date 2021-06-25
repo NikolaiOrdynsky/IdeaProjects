@@ -4,6 +4,7 @@ package AleksandrVasko.Poker;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
 import java.util.List;
 
 public class Points {
@@ -22,18 +23,20 @@ public class Points {
     }
 
     public static void street(ArrayList<Gamers> arrayGamers) {
-        List<String> mastArrayList = Arrays.asList(Coloda.name);
+        List<String> mastArrayList = Arrays.asList(Cards.name);
         List<Integer> indexArray = new ArrayList<>();
         for (Gamers s : arrayGamers) {
-            for (Coloda a : s.hand) {
+            for (Cards a : s.hand) {
                 int index = mastArrayList.indexOf(a.getFace());
                 indexArray.add(index);
+
             }
             if (indexArray.get(0) + 1 == indexArray.get(1) && indexArray.get(1) + 1 == indexArray.get(2) &&
                     indexArray.get(2) + 1 == indexArray.get(3) && indexArray.get(3) + 1 == indexArray.get(4)) {
                 s.points = 4;
             }
             indexArray.removeAll(indexArray);
+
         }
     }
 
@@ -43,7 +46,7 @@ public class Points {
         for (Gamers s : arrayGamers) {
             String indexValue = null;
             int points = 0;
-            for (Coloda c : s.hand) {
+            for (Cards c : s.hand) {
                 indexValue = c.getMasti();
                 indexArray.add(indexValue);
             }
