@@ -1,4 +1,4 @@
-package AleksandrVasko.Collections.CollectionsClass.СompareToMetod;
+package AleksandrVasko.Collections.CollectionsClass.СomparatorCompareTo;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Card card1 = new Card(Mast.BYBNI, Name.DAMA);
         Card card2 = new Card(Mast.CHERVI, Name.KOROL);
-        System.out.println(card1.compareTo(card2));
+        System.out.println(card1.compareTo(card2));// сравнение объектов с помощью перезаписанного метогда compareTo в классе Card.
 
         ArrayList<Card> al = new ArrayList<>();
         Mast[] valueMast = Mast.values();//Создаем массив из элементов enum Mast.
