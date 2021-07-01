@@ -2,6 +2,7 @@ package AleksandrVasko.Collections.SetCollection;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 /*Коллекция, не содержащая повторяющихся элементов. Более формально наборы не содержат пары элементов e1 и e2,
 таких что e1.равно(e2), и не более одного нулевого элемента. Как следует из его названия, этот интерфейс моделирует абстракцию математических множеств.
@@ -30,7 +31,7 @@ public class SetHashSet {
     public static void main(String[] args) {
         String[] array1 = {"vw","audi","skoda","lada"};
         String[] array2 = {"renault","mersedes","ferrari","lada"};
-        java.util.Set<String > list = new HashSet<>(Arrays.asList(array1));
+        Set<String > list = new HashSet<>(Arrays.asList(array1));
         System.out.println(list);
         list.addAll(Arrays.asList(array2));
         System.out.println(list);

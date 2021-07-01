@@ -2,6 +2,8 @@ package AleksandrVasko.Collections.SetCollection;
 
 import java.util.Arrays;
 
+import java.util.NavigableSet;
+import java.util.Set;
 import java.util.TreeSet;
 /*Реализация навигационного набора, основанная на карте деревьев. Элементы упорядочиваются с использованием их естественного порядка или с помощью компаратора,
 предоставляемого во время создания набора, в зависимости от используемого конструктора.
@@ -19,11 +21,18 @@ import java.util.TreeSet;
      */
 public class SetTreeSet {
     public static void main(String[] args) {
-        String[] array1 = {"vw","audi","skoda","lada"};
-        String[] array2 = {"renault","mersedes","ferrari","lada"};
-        java.util.Set<String > list = new TreeSet<>(Arrays.asList(array1));
-        System.out.println(list);
-        list.addAll(Arrays.asList(array2));
-        System.out.println(list);
+        NavigableSet <Car> listCar = new TreeSet<>();
+        listCar.add(new Car("vw", "golf", 3000));
+        listCar.add(new Car("vw", "jetta", 3100));
+        listCar.add(new Car("audi", "a4", 4000));
+        listCar.add(new Car("audi", "tt", 5000));
+        listCar.add(new Car("mersedes", "e500", 6000));
+        listCar.add(new Car("ferrari", "cfd", 10000));
+        Car.print(listCar);
+
+        System.out.println(listCar.ceiling(new Car("audi", "a4", 4100)));//Возвращает наименьший элемент в этом наборе, строго больший, чем данный элемент, или значение null, если такого элемента нет.
+        System.out.println(listCar.floor(new Car("audi", "a4", 4100)));//Возвращает наибольший элемент в этом наборе, строго меньший, чем данный элемент, или равный нулю, если такого элемента нет.
+        System.out.println(listCar.higher(new Car("audi", "a4", 4000)));//Возвращает слудущющий элемент по возростанию, или равный нулю, если такого элемента нет
+        System.out.println(listCar.lower(new Car("audi", "a4", 4000)));//Возвращает предыдущий элемент по убыванию, или равный нулю, если такого элемента нет.
     }
 }
