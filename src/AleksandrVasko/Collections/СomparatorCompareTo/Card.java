@@ -25,8 +25,8 @@ import java.util.List;
 public class Card implements Comparable<Card> {
     /*Класс Card имплементирует интерфейс Comparable с типом <Card>,
     в нем перезаписан метод compareTo, поэтому его объекты могут быть отсортированы в списках. */
-    private Mast mast;
-    private Name name;
+    private final Mast mast;
+    private final Name name;
 
     public Card(Mast mast, Name name) {
         this.mast = mast;
