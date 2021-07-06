@@ -7,7 +7,7 @@ public class Cards {
     protected static String[] name = {"2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "D", "K", "A"};
     private final String masti;
     private final String face;
-   protected static ArrayList<Cards> cards = new ArrayList<>();
+    protected static ArrayList<Cards> cards = new ArrayList<>();
 
     public Cards(String masti, String face) {
         this.masti = masti;

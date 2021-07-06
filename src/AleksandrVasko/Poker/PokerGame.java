@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class PokerGame {
 
-    //создается список из элементов типа Gamers.
-    protected static ArrayList<Gamers> arrayGamers = new ArrayList<>();
-    /*Возвращает массив типа Cards со случайными пятью картами.  */
+
+    protected static ArrayList<Gamers> arrayGamers = new ArrayList<>();//создается список из элементов типа Gamers.
+
     public static Cards[] randomArray() {
         Cards.addColoda();
         Cards[] array = new Cards[5];
@@ -15,8 +15,8 @@ public class PokerGame {
             array[i] = Cards.cards.get(index);
         }
         return array;
-    }
-    /*Возвращает массив типа Cards со пятью картами, указанными вручную.  */
+    }/*Возвращает массив типа Cards со случайными пятью картами.  */
+
     public static Cards[] valueArray() {
         Cards.addColoda();
         Cards[] array = new Cards[5];
@@ -26,13 +26,15 @@ public class PokerGame {
         array[3] = Cards.cards.get(16);
         array[4] = Cards.cards.get(17);
         return array;
-    }
-    public static void game(int colGammers) {
-        // добавляем новые объекты класса Gamers в список arrayGamers.
+    }/*Возвращает массив типа Cards со пятью картами, указанными вручную.  */
+
+    public static void greatGamersAddHandsCard(int colGammers) {
+
         for (int i = 0; i < colGammers; i++) {
             arrayGamers.add(new Gamers(randomArray()));
-        }
-        arrayGamers.add(new Gamers(valueArray()));
+        }// добавляем новые объекты класса Gamers в список arrayGamers. В конструкторе передаем массив Cards[] в нем содержатся их карты.
+        arrayGamers.add(new Gamers(valueArray()));// добавляем новые объекты класса Gamers в список arrayGamers. В конструкторе передаем массив Cards[] в нем содержатся их карты.
+
         /*В методах класса Points, проверяем карты в списке hand, у объектов Gamers, в списке arrayGamers,
         присваиваем полям points у объектов Gamers соответств. очки.*/
         Points.paraSet(arrayGamers);
@@ -42,7 +44,7 @@ public class PokerGame {
 
         //выводим на экран объекты с наибольшими очками.
         winner(arrayGamers);
-    }
+    }//Создает игроков и добавляет им карты в Hands(руку)
 
     private static void winner(ArrayList<Gamers> gamersArrayList) {
         ArrayList<Gamers> winner = new ArrayList<>();
@@ -84,6 +86,6 @@ public class PokerGame {
                 System.out.println("Flash");
             }
         }
-    }
+    }//показывает игроков и их очки, так же победителя и его очки.
 }
 
