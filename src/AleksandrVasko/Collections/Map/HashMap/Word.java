@@ -1,4 +1,4 @@
-package AleksandrVasko.Collections.Map;
+package AleksandrVasko.Collections.Map.HashMap;
 
 import java.util.Objects;
 

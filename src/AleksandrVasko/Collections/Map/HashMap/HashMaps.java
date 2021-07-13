@@ -1,4 +1,4 @@
-package AleksandrVasko.Collections.Map;
+package AleksandrVasko.Collections.Map.HashMap;
 
 import java.util.*;
 
@@ -36,21 +36,14 @@ import java.util.*;
 -V setValue(V v): устанавливает для текущего объекта значение v
 -int hashCode(): возвращает хеш-код данного объекта
 При переборе объектов отображения мы будем оперировать этими методами для работы с ключами и значениями объектов.
+
 Классы отображений. HashMap
 Базовым классом для всех отображений является абстрактный класс AbstractMap, который реализует большую часть методов интерфейса Map.
 Наиболее распространенным классом отображений является HashMap, который реализует интерфейс Map и наследуется от класса AbstractMap.*/
 public class HashMaps {
 
     public static void main(String[] args) {
-        // Map<Integer,String> map= new HashMap<>();
-        // map.put(1,"Toyota");//Связывает указанное значение с указанным ключом в этой карте.Если карта ранее содержала сопоставление для ключа,
-        // старое значение заменяется указанным значением.
-        // map.put(2,"Audi");
-        // map.put(3,"VW");
-        // System.out.println(map.get(1));
         Map<String, Integer> wordMap = new HashMap<>();
-        //Scanner console = new Scanner(System.in);
-        // String string = console.nextLine();
         String string = "Вызывающие абоненты не должны делать никаких предположений об идентичности возвращаемых экземпляров. об идентичности возвращаемых экземпляров об идентичности возвращаемых экземпляров";
         String lowerCaseString = string.toLowerCase();
         String[] word = lowerCaseString.split(" ");//Разбивает эту строку вокруг совпадений данного регулярного выражения.
