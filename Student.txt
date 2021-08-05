@@ -1,0 +1,10 @@
+name= Nik avgGrade 7.2
+[predmet= информатика grade= 9, predmet= география grade= 5, predmet= история grade= 7, predmet= физика grade= 8, predmet= математика grade= 7]
+name= Mary avgGrade 7.8
+[predmet= география grade= 7, predmet= история grade= 9, predmet= физика grade= 9, predmet= математика grade= 7, predmet= информатика grade= 7]
+name= Alex avgGrade 8.0
+[predmet= информатика grade= 10, predmet= география grade= 9, predmet= история grade= 8, predmet= физика grade= 7, predmet= математика grade= 6]
+name= Fil avgGrade 8.4
+[predmet= информатика grade= 10, predmet= география grade= 10, predmet= история grade= 9, predmet= физика grade= 6, predmet= математика grade= 7]
+name= Fiona avgGrade 9.2
+[predmet= информатика grade= 10, predmet= география grade= 9, predmet= физика grade= 10, predmet= история grade= 10, predmet= математика grade= 7]
