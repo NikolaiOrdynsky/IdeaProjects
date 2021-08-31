@@ -1,4 +1,4 @@
-package AleksandrVasko.Poker;
+package AleksandrVasko.MayProgram.Poker;
 
 import java.util.ArrayList;
 import java.util.Collections;

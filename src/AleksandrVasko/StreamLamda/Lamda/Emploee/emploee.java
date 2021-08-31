@@ -1,6 +1,5 @@
-package AleksandrVasko.lamda;
+package AleksandrVasko.StreamLamda.Lamda.Emploee;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.function.Predicate;
 

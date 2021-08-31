@@ -22,7 +22,7 @@ public class PredmetGrade implements Serializable {
 
     @Override
     public String toString() {
-        return "predmet= " + predmet+ " grade= " + grade+ "."+"\n";
+        return "predmet= " + predmet+ " grade= " + grade+ ".";
     }
 
     @Override

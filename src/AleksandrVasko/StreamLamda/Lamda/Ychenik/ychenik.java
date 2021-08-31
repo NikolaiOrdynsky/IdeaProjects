@@ -1,4 +1,4 @@
-package AleksandrVasko.lamda;
+package AleksandrVasko.StreamLamda.Lamda.Ychenik;
 
 import java.util.ArrayList;
 

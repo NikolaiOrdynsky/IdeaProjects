@@ -15,7 +15,7 @@ void go(){
     JFrame jframe = new JFrame();
     button = new JButton("кнопка");
     jframe.getContentPane().add(button);
-    jframe.setSize(300,300);
+    jframe.setSize(700,700);
     jframe.setVisible(true);
     button.setSize(100,70);
     jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

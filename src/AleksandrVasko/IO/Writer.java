@@ -1,14 +1,10 @@
 package AleksandrVasko.IO;
 
-import AleksandrVasko.Collections.Map.TreeMap.Student;
-
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Formatter;
-import java.util.InputMismatchException;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
+
 /*Класс BufferedWriter записывает текст в поток, предварительно буферизируя записываемые символы,
 тем самым снижая количество обращений к физическому носителю для записи данных.
 
@@ -17,9 +13,9 @@ BufferedWriter(Writer out)
 BufferedWriter(Writer out, int sz)
 В качестве параметра он принимает поток вывода, в который надо осуществить запись. Второй параметр указывает на размер буфера.*/
 public class Writer {
-    public static <K, V> void bfWriteStudent(Map<K,V> map, String track)  {
-        try (BufferedWriter writer = new BufferedWriter( new FileWriter(track))) {
-            for (var s : map.entrySet()) {
+    public static <K, V> void bfWriteStudent(Map<K,V> map, String path)  {
+        try (BufferedWriter writer = new BufferedWriter( new FileWriter(path))) {
+            for (Map.Entry<K, V> s : map.entrySet()) {
                 writer.write(s.getKey() + "\n"+ s.getValue()+"\n");
 
 
