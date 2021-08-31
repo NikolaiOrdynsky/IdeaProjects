@@ -1,6 +1,6 @@
 package AleksandrVasko.javarash;
 
-public class Test {
+public class StringMetods {
     public static void main(String[] args) {
         String string = "Думаю, это будет новой фичей." +
                 "Только не говорите никому, что она возникла случайно 1.";
