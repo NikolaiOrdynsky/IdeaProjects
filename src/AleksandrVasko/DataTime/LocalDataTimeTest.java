@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.temporal.TemporalUnit;
 
-public class DataTimeLocal {
+public class LocalDataTimeTest {
     public static void main(String[] args) {
         LocalDateTime date = LocalDateTime.of(2016, Month.AUGUST, 28, 22, 59);
         System.out.println(isWeekend(date));
