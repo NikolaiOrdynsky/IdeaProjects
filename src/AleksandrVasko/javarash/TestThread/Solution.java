@@ -18,9 +18,6 @@ public class Solution {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        for (Thread el : threads) {
-            el.start();
-        }
 
     }
 
