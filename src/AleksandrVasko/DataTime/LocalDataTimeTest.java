@@ -1,13 +1,17 @@
 package AleksandrVasko.DataTime;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.DayOfWeek;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.Month;
-import java.time.temporal.TemporalUnit;
+import java.util.Date;
+
 
 public class LocalDataTimeTest {
-    public static void main(String[] args) {
+    public static void main(String[] args)throws ParseException {
         LocalDateTime date = LocalDateTime.of(2016, Month.AUGUST, 28, 22, 59);
         System.out.println(isWeekend(date));
         System.out.println(date.getDayOfWeek());
