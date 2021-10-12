@@ -20,6 +20,11 @@ import java.util.Scanner;
  */
 public class PalindromeFinderTask {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Ведите число, длинной от 3 до 5 символов, для проверки на полиндромность. ");

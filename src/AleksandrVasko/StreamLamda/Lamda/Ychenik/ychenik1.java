@@ -2,13 +2,36 @@ package AleksandrVasko.StreamLamda.Lamda.Ychenik;
 
 import java.util.ArrayList;
 
+/**
+ * The type Ychenik 1.
+ */
 public class ychenik1 {
 
+    /**
+     * The Name.
+     */
     String name;
+    /**
+     * The Age.
+     */
     int age;
+    /**
+     * The Avg grand.
+     */
     double avgGrand;
+    /**
+     * The Pol.
+     */
     String pol;
 
+    /**
+     * Instantiates a new Ychenik 1.
+     *
+     * @param name     the name
+     * @param age      the age
+     * @param avgGrand the avg grand
+     * @param pol      the pol
+     */
     ychenik1(String name, int age, double avgGrand, String pol) { //Создается конструктор с аргументами name , age, avgGrand, pol.
         this.name = name;// Переменная name этого объекта равна аргументу name.
         this.age = age;
@@ -19,11 +42,25 @@ public class ychenik1 {
 
 }
 
+/**
+ * The type St info.
+ */
 class stInfo {
+    /**
+     * Print st.
+     *
+     * @param b the b
+     */
     void printSt(ychenik1 b) {
         System.out.println(b.name + " " + b.pol + " " + b.age + " " + b.avgGrand);
     }
 
+    /**
+     * Test ychenik.
+     *
+     * @param aL the a l
+     * @param iS the s
+     */
     void testYchenik(ArrayList<ychenik1> aL, infoStudent iS) { // Метод принимает параметры массив список типа ychenik1
                                  // и объект интерфейса infoStudent.
         for (ychenik1 b : aL) { // Цикл пробегает по массиву и сравнивает объекты ychenik1.
@@ -35,7 +72,15 @@ class stInfo {
     }
 }
 
+/**
+ * The type Main.
+ */
 class main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         ychenik1 ych1 = new ychenik1("Ivanov", 20, 9, "men");      // Создается объект класса ychenik.
         ychenik1 ych2 = new ychenik1("Petrov", 21, 8, "men");      // Создается объект класса ychenik.
@@ -60,6 +105,15 @@ class main {
 }
 
 
+/**
+ * The interface Info student.
+ */
 interface infoStudent {
+    /**
+     * Info st boolean.
+     *
+     * @param c the c
+     * @return the boolean
+     */
     boolean infoSt(ychenik1 c);
 }

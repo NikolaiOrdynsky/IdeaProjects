@@ -1,5 +1,19 @@
 package AleksandrVasko.oop.overloadOverrideExtendsEnum;
 
+/**
+ * The enum Engine type.
+ */
 public enum EngineType {
-    PETROL,DISEL,ELECTRIC
+    /**
+     * Petrol engine type.
+     */
+    PETROL,
+    /**
+     * Disel engine type.
+     */
+    DISEL,
+    /**
+     * Electric engine type.
+     */
+    ELECTRIC
 }

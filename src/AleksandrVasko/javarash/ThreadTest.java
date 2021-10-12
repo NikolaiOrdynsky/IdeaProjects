@@ -5,13 +5,26 @@ package AleksandrVasko.javarash;
 import java.time.LocalDateTime;
 
 
+/**
+ * The type Thread test.
+ */
 public class ThreadTest {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Thread violin = new Thread(new Violin("Player"));
         violin.start();
 
     }
 
+    /**
+     * Sleep n second.
+     *
+     * @param n the n
+     */
     public static void sleepNSecond(int n) {
         try {
             Thread.sleep(n * 1000);
@@ -20,15 +33,36 @@ public class ThreadTest {
         }
     }
 
+    /**
+     * The interface Musicalinstrument.
+     */
     public interface Musicalinstrument extends Runnable {
+        /**
+         * Start playing local date time.
+         *
+         * @return the local date time
+         */
         LocalDateTime startPlaying();
 
+        /**
+         * Stop playing local date time.
+         *
+         * @return the local date time
+         */
         LocalDateTime stopPlaying();
     }
 
+    /**
+     * The type Violin.
+     */
     public static class Violin implements Musicalinstrument {
         private String name;
 
+        /**
+         * Instantiates a new Violin.
+         *
+         * @param name the name
+         */
         public Violin(String name) {
             this.name = name;
         }

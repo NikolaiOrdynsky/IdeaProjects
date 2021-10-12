@@ -2,6 +2,9 @@ package AleksandrVasko.javarash.Class_Implements_List;
 
 import java.util.*;
 
+/**
+ * The type Solution.
+ */
 public class Solution implements List<Long> {
     private ArrayList<Long> original = new ArrayList<>();
 
@@ -120,6 +123,11 @@ public class Solution implements List<Long> {
         return original.subList(fromIndex,toIndex);
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
     }

@@ -2,8 +2,16 @@ package AleksandrVasko.oop.homeTask.task1;
 
 import java.util.Scanner;
 
+/**
+ * The type Triangle solution.
+ */
 public class TriangleSolution {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter 3 integer numbers");

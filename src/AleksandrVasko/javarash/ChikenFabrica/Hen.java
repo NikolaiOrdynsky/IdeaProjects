@@ -1,9 +1,22 @@
 package AleksandrVasko.javarash.ChikenFabrica;
 
+/**
+ * The type Hen.
+ */
 public abstract class Hen {
-   abstract int getCountOfEggsPeronth();
+    /**
+     * Gets count of eggs peronth.
+     *
+     * @return the count of eggs peronth
+     */
+    abstract int getCountOfEggsPeronth();
 
-   public String getDescription(){
+    /**
+     * Get description string.
+     *
+     * @return the string
+     */
+    public String getDescription(){
        return "Я - курица.";
    }
 }

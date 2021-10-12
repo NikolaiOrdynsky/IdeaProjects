@@ -4,13 +4,23 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Swing practic.
+ */
 public class SwingPractic implements ActionListener {
-   public static JButton button;
+    /**
+     * The constant button.
+     */
+    public static JButton button;
     @Override
     public void actionPerformed(ActionEvent e) {
         button.setText("qwe");
     }
-void go(){
+
+    /**
+     * Go.
+     */
+    void go(){
 
     JFrame jframe = new JFrame();
     button = new JButton("кнопка");
@@ -25,6 +35,11 @@ void go(){
     jframe.getContentPane().add(lable);
 }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         SwingPractic swg = new SwingPractic();
 swg.go();

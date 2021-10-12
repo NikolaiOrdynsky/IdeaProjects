@@ -34,6 +34,9 @@ package AleksandrVasko.Collections.ListArrayList_Iterator;
 
 import java.util.Scanner;
 
+/**
+ * The type Main.
+ */
 public class Main {
     private static void instruction() {
         System.out.println("""
@@ -48,6 +51,11 @@ public class Main {
         );
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         ArrayLists list = new ArrayLists();
         Scanner console = new Scanner(System.in);

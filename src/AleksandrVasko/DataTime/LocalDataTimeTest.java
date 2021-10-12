@@ -10,7 +10,16 @@ import java.time.Month;
 import java.util.Date;
 
 
+/**
+ * The type Local data time test.
+ */
 public class LocalDataTimeTest {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws ParseException the parse exception
+     */
     public static void main(String[] args)throws ParseException {
         LocalDateTime date = LocalDateTime.of(2016, Month.AUGUST, 28, 22, 59);
         System.out.println(isWeekend(date));
@@ -20,6 +29,12 @@ public class LocalDataTimeTest {
 
     }
 
+    /**
+     * Is weekend boolean.
+     *
+     * @param date the date
+     * @return the boolean
+     */
     public static boolean isWeekend(LocalDateTime date) {
         boolean result=false;
         if ((date.getDayOfWeek()==DayOfWeek.FRIDAY&&date.getHour()>=22)||date.getDayOfWeek()==DayOfWeek.SATURDAY||(date.getDayOfWeek()==DayOfWeek.SUNDAY&&date.getHour()<23)) {

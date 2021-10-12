@@ -1,5 +1,8 @@
 package AleksandrVasko.oop.inerClass;
 
+/**
+ * The type Radio modul.
+ */
 /*
 1. Класс RadioModul состоит из метода call который принимает параметр, этот параметр с помощью инер класса и его методов
   должен быть провалидирован на опр. условия.
@@ -10,10 +13,18 @@ package AleksandrVasko.oop.inerClass;
 4. В методе call создать объект инеркласса и с помощью объекта запустить метод callIn.
  */
 public class RadioModul {
+    /**
+     * Instantiates a new Radio modul.
+     */
     RadioModul() {
         System.out.println("Радио модуль инициализирован. ");
     }
 
+    /**
+     * Call.
+     *
+     * @param number the number
+     */
     public void call(String number) {
 
         class GsmModul {

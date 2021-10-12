@@ -12,7 +12,15 @@ import java.nio.file.Paths;
 import java.util.NavigableMap;
 import java.util.Set;
 
+/**
+ * The type Reader.
+ */
 public class Reader {
+    /**
+     * File reader.
+     *
+     * @param file the file
+     */
     public static void fileReader(String file) {
         try (BufferedReader reader = Files.newBufferedReader(Path.of(file))) {
             String s;
@@ -25,6 +33,11 @@ public class Reader {
         }
     }
 
+    /**
+     * Object reader.
+     *
+     * @param path the path
+     */
     public static void objectReader(String path) {
         try (ObjectInputStream in = new ObjectInputStream(Files.newInputStream(Paths.get(path)))) {
             while (true) {
@@ -41,6 +54,12 @@ public class Reader {
 
     }
 
+    /**
+     * Chanel byte buffer read.
+     *
+     * @param path the path
+     * @throws IOException the io exception
+     */
     public static void chanelByteBufferRead(String path) throws IOException {
         
         try (RandomAccessFile file = new RandomAccessFile(path, "rw");//создается поток на чтение и запись данных побайтово

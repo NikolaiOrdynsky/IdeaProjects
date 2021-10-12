@@ -4,7 +4,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 // метод sortArrayList создает список с переданными строками в параметре, удаляет одинаковые элементы и сортирует их .
 
+/**
+ * The type Sort array list.
+ */
 public class sortArrayList {
+    /**
+     * Array list sort.
+     *
+     * @param str the str
+     */
     public static void arrayListSort(String... str) {
         ArrayList<String> array1 = new ArrayList<>();
         for (String s : str) {                               // В параметр метода arraylistSort передается масиив строк warargs str, с неопределенной длинной,

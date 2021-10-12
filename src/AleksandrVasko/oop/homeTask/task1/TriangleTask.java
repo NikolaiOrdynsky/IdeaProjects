@@ -11,6 +11,11 @@ import java.util.Scanner;
  */
 public class TriangleTask {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int[] array = new int[3];

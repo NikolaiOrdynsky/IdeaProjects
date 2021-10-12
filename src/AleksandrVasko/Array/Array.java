@@ -3,7 +3,15 @@ package AleksandrVasko.Array;
 import java.util.Scanner;
 import java.util.Arrays;
 
+/**
+ * The type Array.
+ */
 public class Array {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите числа от 0 до 99. ");
@@ -23,6 +31,12 @@ public class Array {
         }
     }
 
+    /**
+     * Sort array int [ ].
+     *
+     * @param array the array
+     * @return the int [ ]
+     */
     public static int[] sortArray(int[] array) { // Сортировка массива
         int[] newArrey = Arrays.copyOf(array,array.length);
         for (int i = 0; i < newArrey.length; i++) {

@@ -1,5 +1,23 @@
 package AleksandrVasko.Collections.СomparatorCompareTo;
 
+/**
+ * The enum Mast.
+ */
 public enum Mast {
-    CHERVI, PIKI, BYBNI, KRESTI
+    /**
+     * Chervi mast.
+     */
+    CHERVI,
+    /**
+     * Piki mast.
+     */
+    PIKI,
+    /**
+     * Bybni mast.
+     */
+    BYBNI,
+    /**
+     * Kresti mast.
+     */
+    KRESTI
 }

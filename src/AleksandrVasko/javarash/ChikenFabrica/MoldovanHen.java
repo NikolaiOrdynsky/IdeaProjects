@@ -1,5 +1,8 @@
 package AleksandrVasko.javarash.ChikenFabrica;
 
+/**
+ * The type Moldovan hen.
+ */
 public class MoldovanHen extends Hen{
     @Override
     public int getCountOfEggsPeronth() {

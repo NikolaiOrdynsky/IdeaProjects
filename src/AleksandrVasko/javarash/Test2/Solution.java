@@ -7,7 +7,13 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * The type Solution.
+ */
 public class Solution {
+    /**
+     * The constant allPeople.
+     */
     public static final List<Person> allPeople = new ArrayList<>();
 
     static {
@@ -15,6 +21,12 @@ public class Solution {
         allPeople.add(Person.createMale("Петров Пётр", new Date()));
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws ParseException the parse exception
+     */
     public static void main(String[] args) throws ParseException {
         if (args[0] == null || args.length < 2) {
             throw new RuntimeException("Неверные параметры программы.");

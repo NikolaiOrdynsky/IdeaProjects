@@ -1,6 +1,14 @@
 package AleksandrVasko.Array.arrayWork.arrayWork2;
 
+/**
+ * The type String.
+ */
 public class string {
+    /**
+     * Email.
+     *
+     * @param str the str
+     */
     public static void email(String str){
         int a;
         int b;
@@ -16,6 +24,12 @@ public class string {
 
 
     }
+
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
       email("yaas@mail.com;afa@yahho.com;dgfhd@yandex.ru");
     }

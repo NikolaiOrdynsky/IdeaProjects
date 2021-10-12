@@ -2,7 +2,15 @@ package AleksandrVasko.oop.homeTask.task0;
 
 import java.util.Scanner;
 
+/**
+ * The type Loop solution.
+ */
 public class LoopSolution {
+    /**
+     * Main.
+     *
+     * @param args the args
+     */
     public static void main(String []args){
         System.out.println("Please enter a number of execution cycles");
         Scanner in = new Scanner(System.in);

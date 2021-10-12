@@ -3,9 +3,20 @@ package AleksandrVasko.MayProgram.Olympic;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * The type Main.
+ */
 public class Main {
+    /**
+     * The Map.
+     */
     static NavigableMap<String, Sportsmen> map = new TreeMap<>();
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         addSportsmen(createSportsmen());
@@ -22,6 +33,11 @@ public class Main {
         );
     }
 
+    /**
+     * Add sportsmen.
+     *
+     * @param sp the sp
+     */
     public static void addSportsmen(List<Sportsmen> sp) {
         for (var s : sp) {
           map.put(s.name,s);
@@ -30,6 +46,11 @@ public class Main {
 
     }
 
+    /**
+     * Run.
+     *
+     * @param map the map
+     */
     public static void run(Map<String, Sportsmen> map) {
         List<Sportsmen> list = new ArrayList<>();
         for (Map.Entry<String, Sportsmen> s : map.entrySet()) {

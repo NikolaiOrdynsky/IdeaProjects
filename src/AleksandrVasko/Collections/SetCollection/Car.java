@@ -2,11 +2,21 @@ package AleksandrVasko.Collections.SetCollection;
 
 import java.util.Collection;
 
+/**
+ * The type Car.
+ */
 class Car implements Comparable<Car>{
     private final String brend;
     private final String model;
     private final Integer price;
 
+    /**
+     * Instantiates a new Car.
+     *
+     * @param brend the brend
+     * @param model the model
+     * @param price the price
+     */
     public Car(String brend, String model, Integer price) {
         this.brend = brend;
         this.model = model;
@@ -50,18 +60,38 @@ class Car implements Comparable<Car>{
     }
 
 
+    /**
+     * Gets brend.
+     *
+     * @return the brend
+     */
     public String getBrend() {
         return brend;
     }
 
+    /**
+     * Gets model.
+     *
+     * @return the model
+     */
     public String getModel() {
         return model;
     }
 
+    /**
+     * Gets price.
+     *
+     * @return the price
+     */
     public Integer getPrice() {
         return price;
     }
 
+    /**
+     * Print.
+     *
+     * @param car the car
+     */
     public static void print(Collection<Car> car) {
         for (Car s : car) {
             System.out.printf("%-20s %-20s %-20s \n", s.getBrend(), s.getModel(), s.getPrice());

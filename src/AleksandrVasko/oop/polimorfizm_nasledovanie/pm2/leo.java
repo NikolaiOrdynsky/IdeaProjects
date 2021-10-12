@@ -1,6 +1,14 @@
 package AleksandrVasko.oop.polimorfizm_nasledovanie.pm2;
 
+/**
+ * The type Leo.
+ */
 class leo extends mammal {
+    /**
+     * Instantiates a new Leo.
+     *
+     * @param name the name
+     */
     leo(String name) {
         super(name);
     }

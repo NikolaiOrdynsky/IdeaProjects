@@ -2,11 +2,22 @@ package AleksandrVasko.MayProgram.Poker;
 
 import java.util.ArrayList;
 
+/**
+ * The type Poker game.
+ */
 public class PokerGame {
 
 
+    /**
+     * The constant arrayGamers.
+     */
     protected static ArrayList<Gamers> arrayGamers = new ArrayList<>();//создается список из элементов типа Gamers.
 
+    /**
+     * Random array cards [ ].
+     *
+     * @return the cards [ ]
+     */
     public static Cards[] randomArray() {
         Cards.addColoda();
         Cards[] array = new Cards[5];
@@ -17,6 +28,11 @@ public class PokerGame {
         return array;
     }/*Возвращает массив типа Cards со случайными пятью картами.  */
 
+    /**
+     * Value array cards [ ].
+     *
+     * @return the cards [ ]
+     */
     public static Cards[] valueArray() {
         Cards.addColoda();
         Cards[] array = new Cards[5];
@@ -28,6 +44,11 @@ public class PokerGame {
         return array;
     }/*Возвращает массив типа Cards со пятью картами, указанными вручную.  */
 
+    /**
+     * Great gamers add hands card.
+     *
+     * @param colGammers the col gammers
+     */
     public static void greatGamersAddHandsCard(int colGammers) {
 
         for (int i = 0; i < colGammers; i++) {

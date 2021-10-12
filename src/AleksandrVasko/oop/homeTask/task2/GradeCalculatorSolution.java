@@ -2,8 +2,16 @@ package AleksandrVasko.oop.homeTask.task2;
 
 import java.util.Scanner;
 
+/**
+ * The type Grade calculator solution.
+ */
 public class GradeCalculatorSolution {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
 //      Нам нужен класс Scanner для чтения ввода с консоли

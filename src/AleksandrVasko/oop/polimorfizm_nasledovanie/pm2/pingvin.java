@@ -1,6 +1,14 @@
 package AleksandrVasko.oop.polimorfizm_nasledovanie.pm2;
 
+/**
+ * The type Pingvin.
+ */
 class pingvin extends bird {
+    /**
+     * Instantiates a new Pingvin.
+     *
+     * @param name the name
+     */
     pingvin(String name) {
         super(name);
     }

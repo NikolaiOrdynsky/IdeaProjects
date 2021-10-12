@@ -4,7 +4,16 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Scanner;
+
+/**
+ * The type O reader.
+ */
 public class iOReader {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         try {
             Scanner scanner = new Scanner(System.in);

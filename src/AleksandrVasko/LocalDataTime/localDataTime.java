@@ -4,7 +4,15 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
+/**
+ * The type Local data time.
+ */
 public class localDataTime {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         System.out.println(LocalDateTime.now()); // создание объекта класса дата и время в данный момент времени.
 

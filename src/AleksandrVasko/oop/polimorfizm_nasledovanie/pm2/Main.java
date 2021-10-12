@@ -1,6 +1,14 @@
 package AleksandrVasko.oop.polimorfizm_nasledovanie.pm2;
 
+/**
+ * The type Main.
+ */
 public class Main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         animal p1 = new pingvin("ковальски");
         animal m1 = new mechenosec("акула");

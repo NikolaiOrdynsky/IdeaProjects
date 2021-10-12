@@ -3,6 +3,10 @@ package AleksandrVasko.Collections.SetCollection;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+/**
+ * The type Set hash set.
+ */
 /*Интерфейс Set расширяет интерфейс Collection и представляет набор уникальных элементов.
 Set не добавляет новых методов, только вносит изменения унаследованные.
 В частности, метод add() добавляет элемент в коллекцию и возвращает true, если в коллекции еще нет такого элемента.
@@ -17,6 +21,11 @@ Set не добавляет новых методов, только вносит
 указывает, насколько должна быть заполнена емкость объектами прежде чем произойдет ее расширение. Например, коэффициент 0.75 указывает,
 что при заполнении емкости на 3/4 произойдет ее расширение.*/
 public class SetHashSet {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         String[] array1 = {"vw","audi","skoda","lada"};
         String[] array2 = {"renault","mersedes","ferrari","lada"};

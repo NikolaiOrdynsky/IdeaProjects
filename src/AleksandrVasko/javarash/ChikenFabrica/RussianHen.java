@@ -1,5 +1,8 @@
 package AleksandrVasko.javarash.ChikenFabrica;
 
+/**
+ * The type Russian hen.
+ */
 public class RussianHen extends Hen{
 
     @Override

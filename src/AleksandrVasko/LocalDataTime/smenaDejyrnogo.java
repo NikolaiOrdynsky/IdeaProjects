@@ -2,8 +2,18 @@ package AleksandrVasko.LocalDataTime;
 import java.time.LocalDate;
 import java.time.Period;
 
+/**
+ * The type Smena dejyrnogo.
+ */
 public class smenaDejyrnogo {
-   static void setSmena(LocalDate nachalo, LocalDate konec, Period p){
+    /**
+     * Set smena.
+     *
+     * @param nachalo the nachalo
+     * @param konec   the konec
+     * @param p       the p
+     */
+    static void setSmena(LocalDate nachalo, LocalDate konec, Period p){
         LocalDate data= nachalo;
         while (data.isBefore(konec)){ // пока дата начало раньше даты конец, выполнять тело цикла.
             System.out.println("Наступила дата "+data+" пора менять дежурного.");
@@ -12,6 +22,11 @@ public class smenaDejyrnogo {
 
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         LocalDate ld1 = LocalDate.of(2021,9,19);

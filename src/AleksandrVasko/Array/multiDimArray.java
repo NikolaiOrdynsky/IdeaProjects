@@ -1,6 +1,14 @@
 package AleksandrVasko.Array;
 
+/**
+ * The type Multi dim array.
+ */
 public class multiDimArray {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 //    array[0][0], array[0][1],array[0][2],
 //    array[1][0],array[1][1],array[1][2],array[1][3],array[1][4],

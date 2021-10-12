@@ -2,7 +2,15 @@ package AleksandrVasko.oop.homeTask.task3;
 
 import java.util.Scanner;
 
+/**
+ * The type Palindrome finder solution alternative.
+ */
 public class PalindromeFinderSolutionAlternative {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 //       Объявляем переменную типа boolean которая будет указывать нужно ли продолжать выполнение цикла

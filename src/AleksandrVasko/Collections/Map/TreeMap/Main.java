@@ -4,6 +4,9 @@ import java.util.*;
 
 import static AleksandrVasko.Collections.Map.TreeMap.Student.addStudent;
 
+/**
+ * The type Main.
+ */
 /*Класс TreeMap расширяет класс AbstractMap и реализует интерфейс NavigatebleMap.
 Он создает коллекцию, которая для хранения элементов применяет дерево. Объекты сохраняются в отсортированном порядке по возрастанию.
 Время доступа и извлечения элементов достаточно мало, что делает класс TreeMap блестящим выбором для хранения больших объемов отсортированной информации,
@@ -23,12 +26,23 @@ TreeMap гарантирует скорость доступа log(n) для о�
 */
 public class Main {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         addStudent();
         print(addStudent(), true);
     }
 
 
+    /**
+     * Print.
+     *
+     * @param map the map
+     * @param s   the s
+     */
     public static void print(NavigableMap<Student, Set<PredmetGrade>> map, boolean s) {
 
         Set<Student> set = map.keySet();

@@ -2,6 +2,10 @@ package AleksandrVasko.Collections.ListLinkedList;
 
 import java.util.LinkedList;
 import java.util.List;
+
+/**
+ * The type Linked lists.
+ */
 /*Обобщенный класс LinkedList<E> представляет структуру данных в виде связанного списка.
 Он наследуется от класса AbstractSequentialList и реализует интерфейсы List, Dequeue и Queue.
 То есть он соединяет функциональность работы со списком и фукциональность очереди.
@@ -17,6 +21,11 @@ import java.util.List;
 -getLast() / peekLast(): получает последний элемент
 */
 public class LinkedLists {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         List<String> list = new LinkedList<>();
         list.add("milk");

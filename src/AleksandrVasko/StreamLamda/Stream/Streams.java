@@ -9,7 +9,15 @@ import java.util.stream.Collectors;
 
 import static AleksandrVasko.Collections.Map.TreeMap.Student.addStudent;
 
+/**
+ * The type Streams.
+ */
 public class Streams {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         NavigableMap<Student, Set<PredmetGrade>> map = addStudent();
         map.forEach((s,i)->{

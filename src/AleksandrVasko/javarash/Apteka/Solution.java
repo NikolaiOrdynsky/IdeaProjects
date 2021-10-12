@@ -3,10 +3,25 @@ package AleksandrVasko.javarash.Apteka;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Solution.
+ */
 public class Solution {
+    /**
+     * The constant drugsController.
+     */
     public static DrugsController drugsController = new DrugsController();
+    /**
+     * The constant isStopped.
+     */
     public static boolean isStopped = false;
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws InterruptedException the interrupted exception
+     */
     public static void main(String[] args) throws InterruptedException {
         Thread apteka = new Thread(new Apteka(), "Apteka");
         Thread man = new Thread(new Person(), "Мужчина");
@@ -20,6 +35,9 @@ public class Solution {
         isStopped = true;
     }
 
+    /**
+     * The type Apteka.
+     */
     public static class Apteka implements Runnable {
         @Override
         public void run() {
@@ -32,6 +50,9 @@ public class Solution {
         }
     }
 
+    /**
+     * The type Person.
+     */
     public static class Person implements Runnable {
         @Override
         public void run() {
@@ -43,10 +64,20 @@ public class Solution {
         }
     }
 
+    /**
+     * Gets random count.
+     *
+     * @return the random count
+     */
     public synchronized static int getRandomCount() {
         return (int) (Math.random() * 3) + 1;
     }
 
+    /**
+     * Gets random drug.
+     *
+     * @return the random drug
+     */
     public static Drug getRandomDrug() {
         int index = (int) ((Math.random() * 1000) % (DrugsController.allDrugs.size()));
         List<Drug> drugs = new ArrayList<>(DrugsController.allDrugs.keySet());

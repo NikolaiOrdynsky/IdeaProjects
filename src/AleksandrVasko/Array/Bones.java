@@ -9,7 +9,15 @@ import java.security.SecureRandom;
   должны быть криптографически надежными, как описано в RFC 4086: Требования к случайности для обеспечения безопасности.
 */
 
+/**
+ * The type Bones.
+ */
 public class Bones {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         SecureRandom random = new SecureRandom();
         int[] array = new int[7];

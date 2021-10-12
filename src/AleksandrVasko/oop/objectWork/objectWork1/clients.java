@@ -1,7 +1,15 @@
 package AleksandrVasko.oop.objectWork.objectWork1;
 
 
+/**
+ * The type Clients.
+ */
 public class clients {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         bankAccount client1 = new bankAccount();
 

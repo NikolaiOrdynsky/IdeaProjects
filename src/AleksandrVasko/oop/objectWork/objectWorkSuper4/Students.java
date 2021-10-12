@@ -1,8 +1,17 @@
 package AleksandrVasko.oop.objectWork.objectWorkSuper4;
 import java.util.Scanner;
+
+/**
+ * The type Students.
+ */
 public class Students {
 
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         StudentDefault student1 = new StudentDefault();

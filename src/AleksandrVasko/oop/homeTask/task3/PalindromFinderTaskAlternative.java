@@ -2,7 +2,15 @@ package AleksandrVasko.oop.homeTask.task3;
 
 import java.util.Scanner;
 
+/**
+ * The type Palindrom finder task alternative.
+ */
 public class PalindromFinderTaskAlternative {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите число от 100 до 99999.");

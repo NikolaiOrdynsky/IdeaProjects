@@ -3,8 +3,16 @@ package AleksandrVasko.Collections.SetCollection;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * The type Hash set equals hash cod.
+ */
 public class HashSetEqualsHashCod {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Set<Car> carshering = new HashSet<>();
         Set<Car> carshering1 = new HashSet<>();

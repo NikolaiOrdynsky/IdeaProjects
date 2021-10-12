@@ -4,22 +4,27 @@ package AleksandrVasko.oop.homeTask.task4;
  * Данный класс предназначен для проверки знаний студентов по темам раздела
  * "Базовые конструкции языка Java" тренинга
  * "Java. От простого к сложному" на сайте Udemy.
- *
+ * <p>
  * В теле класса приводятся методы которые должны быть заполнены студентами курса.
  * Задание считается выполненным если все тесты в классе <code>OperatorTest</code>
  * выполнены успешно и при этом соблюдены все требования указанные в JavaDoc к методам.
- *
+ * <p>
  * В случае возникновения трудностей, обратите внимание на тест метода с которым возникла проблема.
  * Возможно так будет проще понять в чем суть задания.
- *
+ * <p>
  * Для проверки правильности выполнения задания просмотрите класс <code>OperatorsAndStatementsAnswers</code>
- *
+ * <p>
  * Created by Aleksandr Vasko.
  */
 public class OperatorsAndStatementsTask {
     private static int strange = 0;
     private static int normal = 0;
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         System.out.println("Running main");
 
@@ -39,7 +44,7 @@ public class OperatorsAndStatementsTask {
     /**
      * Для начала выполнения задания раскомментируйте параметр метода checkStrangeness
      * Метод должен принимать 1 параметр типа int.
-     *
+     * <p>
      * Предположим есть некоторое значение num.
      * Имплементируйте такой метод checkStrangeness(int num){...} который будет проверять
      * переменную num на странность и вернет нам значение:
@@ -62,6 +67,9 @@ public class OperatorsAndStatementsTask {
      * <p>
      * Для проверки результатов выполните тесты в классе OperatorsTest нажав правой кнопкой мыши
      * и вызвав Run OperatorsTest.
+     *
+     * @param num the num
+     * @return the string
      */
     static String checkStrangeness(int num) {
         return null;
@@ -109,11 +117,20 @@ public class OperatorsAndStatementsTask {
     }
 
 
-
+    /**
+     * Gets strange.
+     *
+     * @return the strange
+     */
     static int getStrange() {
         return strange;
     }
 
+    /**
+     * Gets normal.
+     *
+     * @return the normal
+     */
     static int getNormal() {
         return normal;
     }

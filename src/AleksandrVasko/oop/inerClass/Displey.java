@@ -1,9 +1,15 @@
 package AleksandrVasko.oop.inerClass;
 
+/**
+ * The type Displey.
+ */
 public class Displey {
     private static final int DISPLAY_HEIGHT=1920;
     private static final int DISPLAY_WIDTH=1280;
 
+    /**
+     * Instantiates a new Displey.
+     */
     public Displey() {
         Pixel pixel = new Pixel(1280,1920,Color.GREEN);
     }
@@ -23,7 +29,26 @@ public class Displey {
             }
         }
     }
+
+    /**
+     * The enum Color.
+     */
     public enum Color{
-        RED,GREEN,YOLLOW,BLUE
+        /**
+         * Red color.
+         */
+        RED,
+        /**
+         * Green color.
+         */
+        GREEN,
+        /**
+         * Yollow color.
+         */
+        YOLLOW,
+        /**
+         * Blue color.
+         */
+        BLUE
     }
 }

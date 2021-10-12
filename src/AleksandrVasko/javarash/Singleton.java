@@ -4,10 +4,21 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * The type Singleton.
+ */
 public class Singleton {
+    /**
+     * The type Earth.
+     */
     public static class Earth implements Planet {
         private static Earth instance;
 
+        /**
+         * Gets instance.
+         *
+         * @return the instance
+         */
         public static Earth getInstance() {
             if (instance == null) {
                 return instance = new Earth();
@@ -21,9 +32,17 @@ public class Singleton {
         }
     }
 
+    /**
+     * The type Sun.
+     */
     public static class Sun implements Planet {
         private static Sun instance;
 
+        /**
+         * Gets instance.
+         *
+         * @return the instance
+         */
         public static Sun getInstance() {
             if (instance == null) {
                 return instance = new Sun();
@@ -37,9 +56,17 @@ public class Singleton {
         }
     }
 
+    /**
+     * The type Moon.
+     */
     public static class Moon implements Planet {
         private static Moon instance;
 
+        /**
+         * Gets instance.
+         *
+         * @return the instance
+         */
         public static Moon getInstance() {
             if (instance == null) {
                 return instance = new Moon();
@@ -53,12 +80,29 @@ public class Singleton {
         }
     }
 
+    /**
+     * The interface Planet.
+     */
     public  interface Planet {
+        /**
+         * The constant SUN.
+         */
         static String SUN = "sun";
+        /**
+         * The constant MOON.
+         */
         static String MOON = "moon";
+        /**
+         * The constant EARTH.
+         */
         static String EARTH = "earth";
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         System.out.println(thePlanet);
     }
@@ -69,8 +113,14 @@ public class Singleton {
 
     }
 
+    /**
+     * The constant thePlanet.
+     */
     public static Planet thePlanet;
 
+    /**
+     * Greate planet.
+     */
     public static void greatePlanet() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {

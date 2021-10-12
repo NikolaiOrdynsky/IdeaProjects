@@ -2,9 +2,17 @@ package AleksandrVasko.Exeption.Exeption.Exeption2;
 
 import java.util.ArrayList;
 
+/**
+ * The type Veloshop.
+ */
 public class veloshop {
     private ArrayList<String> garaj = new ArrayList<>();
 
+    /**
+     * Gets garaj.
+     *
+     * @param name the name
+     */
     public void getGaraj(String name) {
         if (garaj.contains(name)) {
             System.out.println(name + " Номер ячейки на складе " + garaj.indexOf(name));
@@ -14,6 +22,12 @@ public class veloshop {
 
     }
 
+    /**
+     * Sets garaj.
+     *
+     * @param name the name
+     * @throws noSize the no size
+     */
     public void setGaraj(String name) throws noSize {
         if (garaj.size() < 5) {
             garaj.add(name);
@@ -25,7 +39,15 @@ public class veloshop {
 
     }
 
+    /**
+     * The type No size.
+     */
     class noSize extends Exception {
+        /**
+         * Instantiates a new No size.
+         *
+         * @param message the message
+         */
         noSize(String message) {
             super(message);
         }

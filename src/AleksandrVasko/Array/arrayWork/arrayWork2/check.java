@@ -1,6 +1,15 @@
 package AleksandrVasko.Array.arrayWork.arrayWork2;
 
+/**
+ * The type Check.
+ */
 public class check {
+    /**
+     * Check protocol string.
+     *
+     * @param url the url
+     * @return the string
+     */
     public static String checkProtocol(String url) {
         int a = url.indexOf(":");
         if (a == 5)
@@ -13,6 +22,12 @@ public class check {
 
     }
 
+    /**
+     * Check domain string.
+     *
+     * @param url the url
+     * @return the string
+     */
     public static String checkDomain(String url) {
         int a = url.indexOf('.');
         String s = url.substring(a +1, url.length());
@@ -30,6 +45,11 @@ public class check {
 
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         String[] urls = new String[]{"htt://javarush.ru", "http://wikipedia.org", "https://google.co"};
         for (int i = 0; i < urls.length; i++) {

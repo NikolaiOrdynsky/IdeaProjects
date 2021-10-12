@@ -3,21 +3,39 @@ package AleksandrVasko.Collections.Map.TreeMap;
 import java.io.Serializable;
 import java.util.*;
 
+/**
+ * The type Student.
+ */
 public class Student implements Comparable<Student>, Serializable {
     private final String name;
     private final float avgGrade;
 
 
-
+    /**
+     * Instantiates a new Student.
+     *
+     * @param name     the name
+     * @param avgGrade the avg grade
+     */
     public Student(String name, float avgGrade) {
         this.name = name;
         this.avgGrade = avgGrade;
     }
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     public String getName() {
         return this.name;
     }
 
+    /**
+     * Gets avg grade.
+     *
+     * @return the avg grade
+     */
     public float getAvgGrade() {
         return this.avgGrade;
     }
@@ -30,6 +48,11 @@ public class Student implements Comparable<Student>, Serializable {
         return sum / alex.size();
     }
 
+    /**
+     * Add student navigable map.
+     *
+     * @return the navigable map
+     */
     public static NavigableMap<Student, Set<PredmetGrade>> addStudent() {
         Set<PredmetGrade> alex = new HashSet<>();
         alex.add(new PredmetGrade("история", 8));

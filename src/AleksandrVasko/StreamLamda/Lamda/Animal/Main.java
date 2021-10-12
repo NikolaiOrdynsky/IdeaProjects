@@ -2,9 +2,17 @@ package AleksandrVasko.StreamLamda.Lamda.Animal;
 
 import java.util.ArrayList;
 
+/**
+ * The type Main.
+ */
 public class Main {
 
-        public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
             animal leo = new animal("leva", 1, 3);
             animal elefant = new animal("jimbo", 2, 10);
             animal pingvin = new animal("kovalski", 3, 2);

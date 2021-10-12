@@ -11,28 +11,33 @@ import java.util.Scanner;
  * Так же вам понадобится определенное значение, которое будет обозначать завершение обработки
  * входящих данных и переход к вычислениям. Так как оценки не могут быть отрицательными,
  * можно использовать отрицательное целое значение (например -1 или -5) как указатель выхода из цикла.
- *
+ * <p>
  * Для выполнения задания Вам понадобится класс Scanner.
  * Создайте объект класса <code> Scanner scanner = new Scanner(System.in);</code>
  * Используя методы этого класса, Вы можете прочитать с консоли данные разного типа.
  * <code>
- *     scanner.nextInt();
- *     scanner.nextDouble();
- *     scanner.nextLine();
- *     scanner.nextFloat();
- *     scanner.next();
+ * scanner.nextInt();
+ * scanner.nextDouble();
+ * scanner.nextLine();
+ * scanner.nextFloat();
+ * scanner.next();
  * </code>
- *
+ * <p>
  * После выполнения задания сверьтесь с тем что написано в  GradeCalculatorSolution.java.
- *
+ * <p>
  * Подумайте какие есть недостатки у решения в классе GradeCalculatorSolution.
- *
+ * <p>
  * Вам нужно предложить 2 улучшения. По желанию можно реализовать их самостоятельно (не обязательно).
  * Подсказка: одно из них реализовать очень просто.
  * Для второго Вам могут понадобиться знания из раздела Обработка исключений в Java.
  */
 public class GradeCalculatorTask {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите оценки, чтобы вычислить среднее арифметическое значение введенных оценок. " +

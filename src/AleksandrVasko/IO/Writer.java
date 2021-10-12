@@ -5,6 +5,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
+/**
+ * The type Writer.
+ */
 /*Класс BufferedWriter записывает текст в поток, предварительно буферизируя записываемые символы,
 тем самым снижая количество обращений к физическому носителю для записи данных.
 
@@ -13,6 +16,14 @@ BufferedWriter(Writer out)
 BufferedWriter(Writer out, int sz)
 В качестве параметра он принимает поток вывода, в который надо осуществить запись. Второй параметр указывает на размер буфера.*/
 public class Writer {
+    /**
+     * Bf write student.
+     *
+     * @param <K>  the type parameter
+     * @param <V>  the type parameter
+     * @param map  the map
+     * @param path the path
+     */
     public static <K, V> void bfWriteStudent(Map<K,V> map, String path)  {
         try (BufferedWriter writer = new BufferedWriter( new FileWriter(path))) {
             for (Map.Entry<K, V> s : map.entrySet()) {
@@ -33,6 +44,12 @@ public class Writer {
 
         }
     }
+
+    /**
+     * Bf write bank accaunt.
+     *
+     * @param track the track
+     */
     public static void bfWriteBankAccaunt(String track){
         try (BufferedWriter bfWritter = new BufferedWriter(new FileWriter(track))){
             Scanner scanner = new Scanner(System.in);
@@ -57,6 +74,12 @@ public class Writer {
             System.out.println(s.getMessage());
         }
     }
+
+    /**
+     * Bf write formatter.
+     *
+     * @param track the track
+     */
     public static void bfWriteFormatter(String track) {
         System.out.println("Введите данные аккаунта в формате : 1.id(целое число), 2.имя(буквы), 3.фамилия(буквы),4.счет(дробное число)");
         try (Formatter formatter = new Formatter(track)) {
@@ -72,6 +95,13 @@ public class Writer {
 
         }
     }
+
+    /**
+     * Object writer.
+     *
+     * @param nameObj the name obj
+     * @param track   the track
+     */
     public static void objectWriter(Object nameObj,String track) {
         try (ObjectOutputStream out = new ObjectOutputStream(Files.newOutputStream(Paths.get(track)))){
             out.writeObject(nameObj);

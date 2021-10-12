@@ -125,7 +125,15 @@ Write lines of text to a file.
 
 */
 
+/**
+ * The type Nio files.
+ */
 public class NIOFiles {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
       try(  BufferedReader bufferedReader = Files.newBufferedReader(Paths.get("BankAccaunt.txt"))){
           List<String> list = Files.readAllLines(Paths.get("BankAccaunt.txt"));

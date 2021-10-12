@@ -5,6 +5,10 @@ import java.util.Arrays;
 import java.util.NavigableSet;
 import java.util.Set;
 import java.util.TreeSet;
+
+/**
+ * The type Set tree set.
+ */
 /*Обобщенный класс TreeSet<E> представляет структуру данных в виде дерева, в котором все объекты хранятся в отсортированном виде по возрастанию.
 TreeSet является наследником класса AbstractSet и реализует интерфейс NavigableSet, а следовательно, и интерфейс SortedSet.
 В классе TreeSet определены следующие конструкторы:
@@ -14,6 +18,11 @@ TreeSet является наследником класса AbstractSet и ре
 -TreeSet(Comparator<? super E> comparator): создает пустое дерево, где все добавляемые элементы впоследствии будут отсортированы компаратором.
      */
 public class SetTreeSet {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         NavigableSet <Car> listCar = new TreeSet<>();
         listCar.add(new Car("vw", "golf", 3000));

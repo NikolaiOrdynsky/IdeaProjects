@@ -1,9 +1,17 @@
 package AleksandrVasko.oop.homeTask.task4;
 
+/**
+ * The type Operators and statements answers.
+ */
 public class OperatorsAndStatementsAnswers {
     private static int strange = 0;
     private static int normal = 0;
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         String[] numberTypes = checkStrangeNumbers();
         countNumTypes(numberTypes);
@@ -46,10 +54,20 @@ public class OperatorsAndStatementsAnswers {
         }
     }
 
+    /**
+     * Gets strange.
+     *
+     * @return the strange
+     */
     public static int getStrange() {
         return strange;
     }
 
+    /**
+     * Gets normal.
+     *
+     * @return the normal
+     */
     public static int getNormal() {
         return normal;
     }

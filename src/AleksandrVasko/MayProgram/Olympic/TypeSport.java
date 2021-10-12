@@ -1,5 +1,15 @@
 package AleksandrVasko.MayProgram.Olympic;
 
+/**
+ * The enum Type sport.
+ */
 public enum TypeSport {
-    RUN,JAMP
+    /**
+     * Run type sport.
+     */
+    RUN,
+    /**
+     * Jamp type sport.
+     */
+    JAMP
 }

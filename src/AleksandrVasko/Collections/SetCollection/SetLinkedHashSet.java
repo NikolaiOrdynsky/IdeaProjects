@@ -12,7 +12,15 @@ import java.util.LinkedHashSet;
  без увеличения затрат, связанных с набором деревьев. Его можно использовать для создания копии набора, который имеет тот же порядок,
  что и оригинал, независимо от реализации исходного набора */
 
+/**
+ * The type Set linked hash set.
+ */
 public class SetLinkedHashSet {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         String[] array1 = {"vw","audi","skoda","lada"};
         String[] array2 = {"renault","mersedes","ferrari","lada"};

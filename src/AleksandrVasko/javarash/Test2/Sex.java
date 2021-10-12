@@ -1,5 +1,15 @@
 package AleksandrVasko.javarash.Test2;
 
+/**
+ * The enum Sex.
+ */
 public enum Sex {
-    MALE,FEMALE
+    /**
+     * Male sex.
+     */
+    MALE,
+    /**
+     * Female sex.
+     */
+    FEMALE
 }

@@ -2,6 +2,9 @@ package AleksandrVasko.Collections.Map.HashMap;
 
 import java.util.*;
 
+/**
+ * The type Hash maps.
+ */
 /*Интерфейс Map<K, V> представляет отображение или иначе говоря словарь, где каждый элемент представляет пару "ключ-значение".
 При этом все ключи уникальные в рамках объекта Map. Такие коллекции облегчают поиск элемента,
 если нам известен ключ - уникальный идентификатор объекта.
@@ -42,6 +45,11 @@ import java.util.*;
 Наиболее распространенным классом отображений является HashMap, который реализует интерфейс Map и наследуется от класса AbstractMap.*/
 public class HashMaps {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Map<String, Integer> wordMap = new HashMap<>();
         String string = "Вызывающие абоненты не должны делать никаких предположений об идентичности возвращаемых экземпляров. об идентичности возвращаемых экземпляров об идентичности возвращаемых экземпляров";

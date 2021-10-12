@@ -3,7 +3,15 @@ package AleksandrVasko.Exeption;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * The type Exeption 1.
+ */
 public class Exeption1 {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean a = true;
@@ -26,6 +34,13 @@ public class Exeption1 {
 
     }
 
+    /**
+     * Delenie int.
+     *
+     * @param chislitel  the chislitel
+     * @param znamenatel the znamenatel
+     * @return the int
+     */
     public static int delenie(int chislitel, int znamenatel) {
         return chislitel / znamenatel;
 

@@ -1,6 +1,14 @@
 package AleksandrVasko.Array;
 
+/**
+ * The type Multi dim array 2.
+ */
 public class MultiDimArray2 {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         int[][] array = {{10, 11, 12}, {7, 8, 9}, {4, 5, 6}, {-1, 2, 3}};
         System.out.println("Минимальное число в массиве array = "+minArray(array));

@@ -6,7 +6,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Solution.
+ */
 public class Solution {
+    /**
+     * The constant threads.
+     */
     public static List<Thread> threads = new ArrayList<>(5);
 
     static {
@@ -17,10 +23,19 @@ public class Solution {
         threads.add(new Thread_5());
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws InterruptedException the interrupted exception
+     */
     public static void main(String[] args) throws InterruptedException {
 
     }
 
+    /**
+     * The type Thread 1.
+     */
     public static class Thread_1 extends Thread {
         @Override
         public void run() {
@@ -28,6 +43,9 @@ public class Solution {
         }
     }
 
+    /**
+     * The type Thread 2.
+     */
     public static class Thread_2 extends Thread {
 
 
@@ -43,6 +61,9 @@ public class Solution {
         }
     }
 
+    /**
+     * The type Thread 3.
+     */
     public static class Thread_3 extends Thread {
         @Override
         public void run() {
@@ -57,6 +78,9 @@ public class Solution {
         }
     }
 
+    /**
+     * The type Thread 4.
+     */
     public static class Thread_4 extends Thread implements Message {
         @Override
         public void showWarning() {
@@ -76,6 +100,9 @@ public class Solution {
         }
     }
 
+    /**
+     * The type Thread 5.
+     */
     public static class Thread_5 extends Thread {
         @Override
         public void run() {

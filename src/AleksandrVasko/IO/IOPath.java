@@ -1,4 +1,8 @@
 package AleksandrVasko.IO;
+
+/**
+ * The type Io path.
+ */
 /*
 1.int compareTo(Path other)-Compares two abstract paths lexicographically.
 2.default boolean endsWith(String other)-Tests if this path ends with a Path, constructed by converting the given path string, in exactly the manner specified by the endsWith(Path) method.

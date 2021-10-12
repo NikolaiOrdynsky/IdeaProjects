@@ -3,7 +3,13 @@ package AleksandrVasko.javarash.Apteka;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The type Drugs controller.
+ */
 public class DrugsController {
+    /**
+     * The constant allDrugs.
+     */
     public static Map<Drug, Integer> allDrugs = new HashMap<Drug, Integer>();   // <Лекарство, Количество>
 
     static {
@@ -20,6 +26,12 @@ public class DrugsController {
         allDrugs.put(placebo, 1);
     }
 
+    /**
+     * Buy.
+     *
+     * @param drug  the drug
+     * @param count the count
+     */
     public synchronized  void buy(Drug drug, int count) {
         String name = Thread.currentThread().getName();
         if (!allDrugs.containsKey(drug)) {
@@ -34,6 +46,12 @@ public class DrugsController {
         }
     }
 
+    /**
+     * Sell.
+     *
+     * @param drug  the drug
+     * @param count the count
+     */
     public synchronized  void sell(Drug drug, int count) {
         System.out.println(Thread.currentThread().getName() + " Закупка " + drug.getName() + " " + count);
         if (!allDrugs.containsKey(drug)) {

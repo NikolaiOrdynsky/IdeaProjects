@@ -22,7 +22,15 @@ import java.util.Queue;
 (предложение, опрос, удаление() и добавление); линейное время для методов удаления(объекта) и содержит(Объект);
 и постоянное время для методов извлечения (просмотр, элемент и размер).*/
 
+/**
+ * The type Queue priority queue.
+ */
 public class QueuePriorityQueue {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Queue<Integer> list = new PriorityQueue<>();
         list.offer(1);/*помещает указанный элемент в эту очередь, если это возможно сделать немедленно, не нарушая ограничений емкости.

@@ -1,6 +1,9 @@
 package AleksandrVasko.oop.homeTask.creditCalculator;
 
 
+/**
+ * The type Calculator.
+ */
 public class calculator {
     private int sumCredit = 0;
     private float stavka = 0.0F;
@@ -8,6 +11,14 @@ public class calculator {
     private float dopPlatej=0;
 
 
+    /**
+     * Instantiates a new Calculator.
+     *
+     * @param sumCredit the sum credit
+     * @param month     the month
+     * @param stavka    the stavka
+     * @param dopPlatej the dop platej
+     */
     calculator(int sumCredit, int month, float stavka,float dopPlatej) {
         this.sumCredit = sumCredit;
         this.month = month;
@@ -15,6 +26,9 @@ public class calculator {
         this.dopPlatej=dopPlatej;
     }
 
+    /**
+     * Podshet.
+     */
     void podshet() {
         int periodCount = 1;
         float monthStartBalance = sumCredit;//баланс на начало месяца

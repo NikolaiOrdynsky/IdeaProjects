@@ -2,19 +2,38 @@ package AleksandrVasko.Collections.Map.HashMap;
 
 import java.util.Objects;
 
+/**
+ * The type Word.
+ */
 public class Word implements Comparable<Word> {
     private final String key;
     private final Integer value;
 
+    /**
+     * Instantiates a new Word.
+     *
+     * @param key   the key
+     * @param value the value
+     */
     public Word(String key, Integer value) {
         this.key = key;
         this.value = value;
     }
 
+    /**
+     * Gets key.
+     *
+     * @return the key
+     */
     public String getKey() {
         return key;
     }
 
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
     public Integer getValue() {
         return value;
     }

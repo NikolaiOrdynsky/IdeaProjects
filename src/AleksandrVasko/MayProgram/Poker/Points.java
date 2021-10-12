@@ -7,7 +7,15 @@ import java.util.Arrays;
 
 import java.util.List;
 
+/**
+ * The type Points.
+ */
 public class Points {
+    /**
+     * Para set.
+     *
+     * @param arrayGamers the array gamers
+     */
     public static void paraSet(ArrayList<Gamers> arrayGamers) {
         for (Gamers a : arrayGamers) {
             for (int i = 0; i < a.hand.size(); i++) {
@@ -22,6 +30,11 @@ public class Points {
         }
     }
 
+    /**
+     * Street.
+     *
+     * @param arrayGamers the array gamers
+     */
     public static void street(ArrayList<Gamers> arrayGamers) {
         List<String> mastArrayList = new ArrayList<>(Arrays.asList(Cards.name));
         List<Integer> indexArray = new ArrayList<>();
@@ -40,6 +53,11 @@ public class Points {
         }
     }
 
+    /**
+     * Flash.
+     *
+     * @param arrayGamers the array gamers
+     */
     public static void flash(ArrayList<Gamers> arrayGamers) {
         ArrayList<String> indexArray = new ArrayList<>();
 

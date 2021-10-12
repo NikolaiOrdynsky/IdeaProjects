@@ -3,6 +3,10 @@ package AleksandrVasko.Collections.СomparatorCompareTo;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+/**
+ * The type Card.
+ */
 /* Интерфейс Comparable<T> накладывает общий порядок на объекты каждого класса, который его реализует.
  Это упорядочение называется естественным упорядочением класса, а метод сравнения класса называется его естественным методом сравнения.
 Списки (и массивы) объектов, реализующих этот интерфейс, могут быть автоматически отсортированы по Collections.sort (и Arrays.sort).
@@ -28,15 +32,31 @@ public class Card implements Comparable<Card> {
     private final Mast mast;
     private final Name name;
 
+    /**
+     * Instantiates a new Card.
+     *
+     * @param mast the mast
+     * @param name the name
+     */
     public Card(Mast mast, Name name) {
         this.mast = mast;
         this.name = name;
     }
 
+    /**
+     * Gets mast.
+     *
+     * @return the mast
+     */
     public Mast getMast() {
         return mast;
     }
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     public Name getName() {
         return name;
     }
@@ -69,6 +89,12 @@ public class Card implements Comparable<Card> {
         return "Card " + mast + " " + name;
 
     }
+
+    /**
+     * Print card.
+     *
+     * @param al the al
+     */
     public static void printCard(ArrayList<Card> al) {
         System.out.println("-------------------------------------------------");
         int i = 0;

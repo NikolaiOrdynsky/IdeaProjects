@@ -4,7 +4,16 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * The type Url edit.
+ */
 public class UrlEdit {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws IOException the io exception
+     */
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String url = reader.readLine();
@@ -29,10 +38,20 @@ public class UrlEdit {
         }
     }
 
+    /**
+     * Alert.
+     *
+     * @param value the value
+     */
     public static void alert(double value) {
         System.out.println("double: " + value);
     }
 
+    /**
+     * Alert.
+     *
+     * @param value the value
+     */
     public static void alert(String value) {
         System.out.print( value+" ");
     }

@@ -3,6 +3,10 @@ package AleksandrVasko.Collections.СomparatorCompareTo;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+
+/**
+ * The type Comparator name card.
+ */
 /*Функция сравнения, которая налагает общий порядок на некоторую коллекцию объектов. Компараторы могут быть переданы в
 метод сортировки (например, коллекции.сортировка или массивы.сортировка), чтобы обеспечить точный контроль над порядком
 сортировки. Компараторы также могут использоваться для управления порядком определенных структур данных
@@ -23,6 +27,9 @@ import java.util.List;
  Для успешной сериализации структуры данных компаратор (если он предусмотрен) должен реализовать сериализуемую.
 */
 public class ComparatorNameCard implements Comparator<Card> {
+    /**
+     * The List name.
+     */
     List<Name> listName = Arrays.asList(Name.values());
 
     @Override
