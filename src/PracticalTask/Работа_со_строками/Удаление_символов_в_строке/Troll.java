@@ -1,4 +1,4 @@
-package PracticalTask.Удаление_символов_в_строке;
+package PracticalTask.Работа_со_строками.Удаление_символов_в_строке;
 
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,6 +1,4 @@
-package PracticalTask.Замена_символов_в_строке;
-
-import java.util.Arrays;
+package PracticalTask.Работа_со_строками.Замена_символов_в_строке;
 
 public class Main {
     public static String correct(String string) {

@@ -1,4 +1,4 @@
-package PracticalTask.Число_в_строку;
+package PracticalTask.Работа_со_строками.Число_в_строку;
 
 public class Kata {
 

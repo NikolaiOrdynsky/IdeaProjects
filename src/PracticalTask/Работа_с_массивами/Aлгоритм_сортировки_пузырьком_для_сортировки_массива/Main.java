@@ -1,4 +1,4 @@
-package PracticalTask.Aлгоритм_сортировки_пузырьком_для_сортировки_массива;
+package PracticalTask.Работа_с_массивами.Aлгоритм_сортировки_пузырьком_для_сортировки_массива;
 
 public class Main {
     public static void main(String[] args) {

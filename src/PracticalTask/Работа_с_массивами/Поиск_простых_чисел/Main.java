@@ -1,4 +1,4 @@
-package PracticalTask.Поиск_простых_чисел;
+package PracticalTask.Работа_с_массивами.Поиск_простых_чисел;
 
 public class Main {
     public static void main(String[] args) {

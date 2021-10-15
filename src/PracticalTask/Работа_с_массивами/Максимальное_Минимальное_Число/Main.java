@@ -1,4 +1,4 @@
-package PracticalTask.Максимальное_Минимальное_Число;
+package PracticalTask.Работа_с_массивами.Максимальное_Минимальное_Число;
 
 import java.util.Random;
 

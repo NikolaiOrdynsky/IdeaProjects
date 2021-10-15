@@ -1,4 +1,4 @@
-package PracticalTask.Удаление_массива_из_массива;
+package PracticalTask.Работа_с_массивами.Удаление_массива_из_массива;
 
 import java.util.Arrays;
 
