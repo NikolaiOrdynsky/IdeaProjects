@@ -20,7 +20,6 @@ public class Solution {
 
         try (BufferedReader path = new BufferedReader(new InputStreamReader(System.in));
              BufferedReader reader = new BufferedReader(new FileReader(path.readLine()))) {
-            List<String> fileString = new ArrayList<>();
             while (reader.ready()) {
                 String line = reader.readLine();
                 int count = 0;
