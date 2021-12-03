@@ -1,4 +1,4 @@
-package PracticalTask.IO_Streams.Замена_цифр_на_слова;
+package PracticalTask.IO_Streams.Замена_цифр_в_строке_на_слова;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
