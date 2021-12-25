@@ -3,6 +3,9 @@ package AleksandrVasko;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -19,10 +22,12 @@ public class test {
                 Arrays.asList('z', '1', 'e', 'Z', 'q', 'd', '8', 'E');
 
 
-        long count = characters.stream()
-                .filter(Character::isLetter)
-                .map(Character::toUpperCase)
-                .filter(c -> c != 'E')
-                .count();
+//        long count = characters.stream()
+//                .filter(Character::isLetter)
+//                .map(Character::toUpperCase)
+//                .filter(c -> c != 'E')
+//                .count();
+        Map<Integer, List<Integer>> collect = Stream.of(1, 2, 1, 3, 2, 4).collect(Collectors.groupingBy(Function.identity()));
+        System.out.println(collect);
     }
 }

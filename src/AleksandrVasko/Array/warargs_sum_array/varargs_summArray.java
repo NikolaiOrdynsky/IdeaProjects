@@ -1,4 +1,4 @@
-package AleksandrVasko.warargs_sum_array;
+package AleksandrVasko.Array.warargs_sum_array;
 
 /**
  * The type Varargs summ array.
